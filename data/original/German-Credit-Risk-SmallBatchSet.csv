@@ -1,0 +1,15 @@
+CheckingStatus,LoanDuration,CreditHistory,LoanPurpose,LoanAmount,ExistingSavings,EmploymentDuration,InstallmentPercent,Sex,OthersOnLoan,CurrentResidenceDuration,OwnsProperty,Age,InstallmentPlans,Housing,ExistingCreditsCount,Job,Dependents,Telephone,ForeignWorker
+0_to_200,4,all_credits_paid_back,car_new,250,100_to_500,less_1,2,female,none,3,real_estate,26,bank,rent,1,unskilled,1,none,yes
+0_to_200,14,credits_paid_to_date,car_new,3148,less_100,1_to_4,3,male,none,3,car_other,41,none,own,2,skilled,1,none,yes
+greater_200,19,credits_paid_to_date,radio_tv,5351,100_to_500,greater_7,4,male,none,3,savings_insurance,49,none,own,2,skilled,1,yes,yes
+greater_200,34,outstanding_credit,other,5790,500_to_1000,greater_7,5,male,none,4,car_other,44,stores,own,2,unskilled,1,yes,yes
+less_0,4,all_credits_paid_back,car_new,250,100_to_500,less_1,1,female,none,1,real_estate,21,bank,rent,1,unskilled,1,none,yes
+less_0,4,all_credits_paid_back,car_new,250,less_100,1_to_4,2,male,none,1,savings_insurance,22,stores,rent,1,unskilled,1,none,yes
+no_checking,21,prior_payments_delayed,radio_tv,5852,unknown,1_to_4,4,female,co-applicant,4,savings_insurance,41,bank,own,2,unemployed,1,yes,yes
+no_checking,22,outstanding_credit,furniture,5465,500_to_1000,greater_7,4,female,none,3,unknown,41,none,free,1,skilled,1,yes,yes
+0_to_200,10,credits_paid_to_date,appliances,1770,less_100,less_1,2,female,none,3,car_other,27,none,own,1,skilled,1,none,yes
+greater_200,41,prior_payments_delayed,furniture,1431,500_to_1000,1_to_4,2,female,none,3,savings_insurance,19,stores,free,2,skilled,1,yes,yes
+less_0,4,all_credits_paid_back,car_new,250,less_100,1_to_4,2,female,co-applicant,1,savings_insurance,36,stores,free,1,skilled,1,none,yes
+no_checking,14,all_credits_paid_back,furniture,2420,less_100,less_1,3,female,none,4,real_estate,20,none,own,1,management_self-employed,1,none,yes
+no_checking,14,prior_payments_delayed,radio_tv,6774,100_to_500,4_to_7,4,female,none,3,car_other,32,none,own,2,management_self-employed,1,none,yes
+no_checking,15,outstanding_credit,retraining,4372,100_to_500,greater_7,3,male,none,4,car_other,51,none,own,1,management_self-employed,1,none,yes
