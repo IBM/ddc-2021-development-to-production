@@ -68,15 +68,15 @@ In order to conserve resources, make sure that you stop the environment used by 
 
 * Navigate back to your project information page by clicking on your project name from the navigation drill down on the top left of the page.
 
-  [![Back to project](../images/project/navigate-to-project.png)](../images/ml/navigate-to-project.png)
+  [![Back to project](../images/project/navigate-to-project.png)](../images/project/navigate-to-project.png)
 
 * Click on the 'Environments' tab near the top of the page. Then in the 'Active environment runtimes' section, you will see the environment used by your notebook (i.e the `Tool` value is `Notebook`). Click on the three vertical dots at the right of that row and select the `Stop` option from the menu.
 
-  [![Stop environment](../images/project/stop-notebook-environment.png)](../images/ml/stop-notebook-environment.png)
+  [![Stop environment](../images/project/stop-notebook-environment.png)](../images/project/stop-notebook-environment.png)
 
 * Click the `Stop` button on the subsequent pop up window.
 
-  [![Stop environment confirm](../images/project/stop-notebook-environment-confirmation.png)](../images/ml/stop-notebook-environment-confirmation.png)
+  [![Stop environment confirm](../images/project/stop-notebook-environment-confirmation.png)](../images/project/stop-notebook-environment-confirmation.png)
 
 * ***Important: If you have completed this section and do not plan on completing the other optional deployment approaches, please go ahead and cleanup your deployment. Follow the [Cleanup Deployment instructions.](README.md#cleanup-deployments)***
 
