@@ -6,7 +6,7 @@ This section is broken up into the following steps:
 
 1. [Run AutoAI Experiment](#create-an-autoai-experiment)
 1. [Save and Promote AutoAI Model](#save-and-promote-autoai-model)
-1. [Save AutoAI Notebook](#save-autoai-notebook)
+1. [Save AutoAI Notebooks](#save-autoai-notebooks)
 1. [Conclusion](#conclusion)
 
 > **Note:** You can click on any image in the instructions below to zoom in and see more details. When you do that just click on your browser's back button to return to the previous page.
@@ -98,13 +98,21 @@ This section is broken up into the following steps:
 
 * You will be brought back to your project assets page and see a notification that the model was promoted to the deployment space succesfully. Feel free to close that notification.
 
-## Save AutoAI notebook
+## Save AutoAI notebooks
 
-In addition to saving models, we now have the ability to save a Jupyter notebook with working code. This can be the code representation of the AutoAI experiment, or it can be the implementation of a specific pipeline. Let's explore how we can save a pipeline as a notebook.
+In addition to saving models, we now have the ability to save a Jupyter notebook with working code. This can be the code representation of the AutoAI experiment (with access to all of the generated pipelines), or it can be the implementation of a specific pipeline. Let's explore how we can save both the experiment and a pipeline as a notebook.
 
-* To save the AutoAI pipeline as a notebook, navigate back to the AutoAI experiment overview page by clicking on the AutoAI experiment name in your project assets page (under the `AutoAI experiments` section).
+* To save the AutoAI experiment as a notebook, navigate back to the AutoAI experiment overview page by clicking on the AutoAI experiment name in your project assets page (under the `AutoAI experiments` section).
 
-* Scroll down to the pipeline leader board section. Then hover over the right side of one of the other pipelines and click the resulting `Save as` button. For sake of demonstration, we are going to save a pipeline for an algorithm that is different from the model we saved in the previous section (i.e in this case Pipeline 7).
+* Click on the `Save code` link in the 'Progress map' section of the UI.
+
+    [![Save notebook](../images/autoai/autoai-experiment-save-code.png)](../images/autoai/autoai-experiment-save-code.png)
+
+* Leave the default name and click the `Create` button to save the experiment as a notebook.
+
+    [![Save notebook](../images/autoai/autoai-experiment-save-code-create.png)](../images/autoai/autoai-experiment-save-code-create.png)
+
+* To save the AutoAI pipeline as a notebook, from the experiment overview page, scroll down to the pipeline leader board section. Then hover over the right side of one of the other pipelines and click the resulting `Save as` button. For sake of demonstration, we are going to save a pipeline for an algorithm that is different from the model we saved in the previous section (i.e in this case Pipeline 7).
 
     [![Save notebook](../images/autoai/autoai-pipeline-for-notebook.png)](../images/autoai/autoai-pipeline-for-notebook.png)
 
