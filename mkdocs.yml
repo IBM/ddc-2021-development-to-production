@@ -6,7 +6,7 @@ site_author: IBM Developer
 # Repository
 repo_name: ddc-2021-development-to-production
 repo_url: https://github.com/ibm/ddc-2021-development-to-production
-edit_uri: edit/master/workshop
+edit_uri: edit/master/docs
 
 # Navigation
 nav:
