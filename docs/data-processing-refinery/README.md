@@ -92,7 +92,7 @@ We will start by wrangling, shaping and refining our data. To do this, we will c
 
     [![Flow](../images/dr/dr-flow-edit-information.png)](../images/dr/dr-flow-edit-information.png)
 
-* Click the pencil icon next to `Data Refinery Flow Name`, set the name to `credit_risk_wrangling_cleaning_flow` and click the `Apply` button. Then click the `Edit Output pencil icon` and set the name to `credit_risk_shaped` (leave the rest of the CSV output defaults) and click the 'Check mark icon'. Finally, click the `Done` button
+* Click the pencil icon next to `Data Refinery Flow Name`, set the name to `credit_risk_wrangling_cleaning_flow` and click the `Apply` button. Then click the `Edit Output pencil icon` and set the name to `credit_risk_shaped.csv` (leave the rest of the CSV output defaults) and click the 'Check mark icon'. Finally, click the `Done` button
 
     [![Flow](../images/dr/df-flow-edit-information-inputoutput.png)](../images/dr/df-flow-edit-information-inputoutput.png)
 
