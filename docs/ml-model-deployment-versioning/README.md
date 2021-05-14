@@ -46,7 +46,7 @@ Its important to note that in order to update a deployment, the framework of the
 
     [![select replacement](../images/deployment/deployment-replace-asset-updating.png)](../images/deployment/deployment-replace-asset-updating.png)
 
-* Once the update completes, you will receive a notification that the deployment has been updated and teh status will change to `Deployed`. To validate the update, click on the deployment name.
+* Once the update completes, you will receive a notification that the deployment has been updated and the status will change to `Deployed`. To validate the update, click on the deployment name.
 
 * Notice that the endpoint has not changed (the unique id is still the same) but the associated asset has been updated to our new model.
 
