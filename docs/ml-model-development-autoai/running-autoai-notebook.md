@@ -44,6 +44,12 @@ The notebook generated is pre filled with Python code and is divided into the fo
 
     [![setup](../images/autoai/autoai-expnotebook-setup.png)](../images/autoai/autoai-expnotebook-setup.png)
 
+* After the libraries are installed, you should restart the Jupyter kernel. Click on `Kernel` menu at the top of the page and select the `Restart` option from the menu.
+
+    > *Note: If you do not restart the kernel, as you execute furtuer cells in the notebook you may see errors indicating there are missing libraries or missing specific version of libraries.*
+
+    [![restart kernel](../images/autoai/autoai-expnotebook-restartkernel.png)](../images/autoai/autoai-expnotebook-restartkernel.png)
+
 ### 2.0 Experiment Configuration
 
 * The first part of this section contains credentials to *Cloud Object Storage* through which the training data that was used to create the pipelines and the pipeline results are retrieved. Run this cell as is.
