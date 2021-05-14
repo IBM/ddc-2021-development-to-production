@@ -1,12 +1,14 @@
 # Modifying and Running an AutoAI Generated Notebook
 
-In this module, we'll explore how to run an AutoAI pipeline jupyter notebook. The notebook allows you to interact with the experiment or pipeline (pipeline notebooks are currently only supported for single data source, non-time series experiments) programmatically. This exploration will help you understand the transformations applied to build a model.
+In this module, we'll explore how to run the AutoAI generated jupyter notebooks. The notebooks allows you to interact with the experiment or pipeline (pipeline notebooks are currently only supported for single data source, non-time series experiments) programmatically. This exploration will help you understand the transformations applied to build a model, and can serve as a starting point for further pipeline/model development.
 
 > **Note:** You can click on any image in the instructions below to zoom in and see more details. When you do that just click on your browser's back button to return to the previous page.
 
 > **Note:** The lab instructions below assume you have completed the setup section already, if not, be sure to complete the setup first to create a project and a deployment space. It is also assumed you have completed the [AutoAI lab](README.md) where you completed an AutoAI experiment and saved a pipeline as a Jupyter notebook which you will be exploring in this module.
 
-## Open Juptyer Notebook
+## Open AutoAI Experiment Notebook
+
+Let's start by exploring the AutoAI experiment notebook. This notebook contains all the code to view the transformations and optimizations applied to create the model pipelines. It includes generated code to access experiment details/configuration, visualize each of the pipelines, compare pipelines, and deploy individual pipelines.
 
 * Go the (☰) navigation menu, expand `Projects` and click on the project you created during the setup section.
 
@@ -14,7 +16,7 @@ In this module, we'll explore how to run an AutoAI pipeline jupyter notebook. Th
 
 * From your `Project` overview page, click on the `Assets` tab to open the assets page where your project assets are stored and organized.
 
-* Scroll down to the `Notebooks` section of the page and click on the pencil icon at the right of the `machinelearning-creditrisk-sparkmlmodel` notebook.
+* Scroll down to the `Notebooks` section of the page and click on the pencil icon at the right of the Auto AI experiment notebook (the exact name will be based on the name of the AutoAI experiment you ran but will end in `- experiment notebook` ).
 
     [![Notebook Open](../images/autoai/autoai-open-jupyternotebook.png)](../images/autoai/autoai-open-jupyternotebook.png)
 
@@ -31,74 +33,89 @@ You will run cells individually by highlighting each cell, then either click the
 The notebook generated is pre filled with Python code and is divided into the following sections:
 
 * [1.0 Setup](#10-setup)
-* [2.0 Pipeline inspection](#20-pipeline-inspection)
-* [3.0 Deploy and score as web service using WML instance](#30-deploy-and-score-as-web-service-using-wml-instance)
+* [2.0 Experiment Configuration](#20-experiment-configuration)
+* [3.0 Watson Machine Learning Connection](#30-watson-machine-learning-connection)
+* [4.0 Working with Completed AutoAI Experiment](#40-working-with-completed-autoai-experiment)
+* [5.0 Deploy and score](#50-deploy-and-score)
 
 ### 1.0 Setup
 
-This section contains credentials to *Cloud Object Storage* through which the current AutoAI pipeline is retrieved. The cell contains code prefilled to extract the training data used to create the pipeline and the pipeline results.
+* This section installs the necessary packages and libraries to run the AutoAI experiment and scikit learn pipelines. Run the cell in this section as is.
 
-[![experiment metadata](../images/autoai/experiment_metadata.png)]()
+    [![setup](../images/autoai/autoai-expnotebook-setup.png)](../images/autoai/autoai-expnotebook-setup.png)
 
-Also this section contains the metadata of the current pipelines that were used to run the experiment.
+### 2.0 Experiment Configuration
 
-[![input parameters](../images/autoai/input_parameters.png)]()
+* The first part of this section contains credentials to *Cloud Object Storage* through which the training data that was used to create the pipelines and the pipeline results are retrieved. Run this cell as is.
 
-### 2.0 Pipeline inspection
+    [![experiment metadata](../images/autoai/experiment_metadata.png)](../images/autoai/experiment_metadata.png)
 
-Within this section of the notebook, there is code that extracts the current model and prints it as Python code.
+* The next cell contains the metadata of the experiment configuration. Run the cell as is.
 
-[![pretty print -1](../images/autoai/pretty_print-1.png)]()
+    [![input parameters](../images/autoai/input_parameters.png)](../images/autoai/input_parameters.png)
 
-This section also contains code to visualize the stages within the model as a graph using Watson Machine Learning's AutoAI APIs.
+### 3.0 Watson Machine Learning Connection
 
-[![visualize -1](../images/autoai/visualize-1.png)]()
+* This section will setup the credentials to the Machine Learning instance you provisoned. In the code cell, replace the variable value `'PUT_YOUR_KEY_HERE'` with your the API key you created during the setup section. (*Note: Remember to keep the single quotes*).
 
-### 3.0 Deploy and score as web service using WML instance
+* Once you've updated the api_key variable, run the two cells in this section.
 
-This section of the notebook contains code that deploys the pipeline model as a web service using Watson Machine Learning. This section requires users to enter credentials to be able to identify the right WML instance and deployment space. The two credentials are `api_key` and `target_space_id`
+    [![input parameters](../images/autoai/autoai-expnotebook-wmlkey.png)](../images/autoai/autoai-expnotebook-wmlkey.png)
 
-#### api_key
+### 4.0 Working with Completed AutoAI Experiment
 
-To be able to access the WML instance, the user will need to generate an *api key* through the cloud account and paste it in the cell as shown in the cell below. The instructions to acquire the *cloud api key* is described in the markdown section of the screenshot shown below.
+* Within this section of the notebook, the first set of code cells extract the current experiment (i.e. `pipeline_optimizer`) and then gets the pipelines from the experiment to display their performance in a table. Run the cells until you see the table output from the `Pipeline Comparison` cell.
 
-[![wml connection](../images/autoai/wml_connection_autoai.png)]()
+    [![pipeline comparison](../images/autoai/autoai-expnotebook-pipelinesummary.png)](../images/autoai/autoai-expnotebook-pipelinesummary.png)
 
-#### target_space_id
+* The next cell will retrieve a pipeline from the experiment. The generated code retrieves the top pipeline. Before running the cell, use a `#` to comment out the generated code: `pipeline_model = pipeline_optimizer.get_pipeline()`. Then copy the following code and paste it below the line you just commented out (*Note: your code cell should look like the code in the next screenshot*).
 
-You'll need a *target_space_id* from your deployment space, either created in an earlier part of this workshop or you may create one right now, if needed.
+    ```python
+    pipeline_to_explore = 'INSERT_PIPELINE_NAME_HERE'
+    pipeline_model = pipeline_optimizer.get_pipeline(pipeline=pipeline_to_explore)
+    ```
 
->*Either get the target_space_id or create a deployment space now*:
+* In the code you just inserted, replace the value `INSERT_PIPELINE_NAME_HERE` with one of the pipeline names you see in the first column of the summary table (*Note: Pick a pipeline name you haven't deployed in a previous lab. In the screenshot below, we are getting the pipeline `Pipeline_7`*). Once you have updated this cell, go ahead and run it.
 
-[![wml deployment space](../images/autoai/wml-deployment-space.gif)]()
+    [![pipeline get](../images/autoai/autoai-expnotebook-getpipelinename.png)](../images/autoai/autoai-expnotebook-getpipelinename.png)
 
->
->1. Click on the hamburger menu on the top-left corner of the Cloud Pak for Data home page.
->1. Click on `Deployment Spaces` from the list and select `View all spaces`
->1. If you haven't created a deployment space previously, click `New deployment space`, select `Create an empty space` option.
->1. For a new `Deployment Space`, provide a name, select a machine learning service that was previously created and click `Create`
->1. Either click on the existing `Deployment Space` or click `View new space` and switch to the `Settings` tab and copy the `space id`
+* Continue running the other cells in this section without modification, including the cell in the `Visualize pipeline model` section and the `Preview pipeline model as python code` section. The former cell output will display a graph of the pipeline. You can hover over any of the graph nodes to get information about the task being done in that step. The latter cell allows you to get the pipeline implementation as either lale wrapper code or directly sklearn pipeline representation.
 
-Acquire the *target_space_id* as shown in the steps above and paste within the create deployment section. The Watson Machine Learning API uses the `wml_credentials` and the `target_space_id` to deploy the machine learning model as a web service.
+    [![visualize](../images/autoai/autoai-expnotebook-visualizepipeline.png)](../images/autoai/autoai-expnotebook-visualizepipeline.png)
 
-[![create deployment](../images/autoai/create_deployment_autoai.png)]()
+### 5.0 Deploy and Score
 
-Once the cells are executed, the model is promoted to the deployment space and is now available as a web service and can be verified from within the UI, or using the Python SDK as demonstrated in the notebook.
+* This section of the notebook contains code that deploys the pipeline model as a web service using Watson Machine Learning. This section requires users to enter a `target_space_id` of the deployment space where the model will be deployed.
 
-[![model deployed](../images/autoai/wml_model_deployed.png)]()
+* To get the deployment space ID for the space you created during the setup module, perform the following steps:
 
-#### Score web service
+    * In a new browser window or tab. Navigate to the left-hand (☰) hamburger menu, expand the `Deployments` section and click on `View all spaces`.
+    * Click on the `Spaces` tab and then choose the deployment space you setup previously by clicking on the name of your space.
+    * Click on the `Manage` tab and then click the copy icon next to the `Space GUID`.
 
-For details on how to test the deployed model using the UI, see the steps in the [Machine Learning Deployment and Scoring Lab](../machine-learning-deployment-scoring/README.md#test-online-model-deployment)
+        [![deployment space id](../images/autoai/autoai-depspaceid.png)](../images/autoai/autoai-depspaceid.png)
 
-For this lab, you can test this deployment using the Python SDK by running the final cell in the notebook:
+* In the `Deployment creation` code cell, paste the space ID you just copied above as the value for the`target_space_id` variable. Also change the line: `model=best_pipeline_name,` to `model=pipeline_to_explore,#best_pipeline_name,`. This will deploy the pipeline we were exploring above to our deployment space. Go ahead and run the cell.
 
-```python
-predictions = service.score(payload=test_df)
-predictions
-```
+    [![wml deployment space](../images/autoai/autoai-expnotebook-deploymentcreation.png)](../images/autoai/autoai-expnotebook-deploymentcreation.png)
 
-[![score web service](../images/autoai/score_webservice.png)]()
+* Once the cell is executed, the call in the SDK will both save the model to the deployment space and create an online deployment.
+
+* Run the remaining cells in the notebook. These cells provide some samples of using the SDK to modify and run AutoAI experiments programmatically.
+
+## (Optional) Open AutoAI Pipeline Notebook
+
+For further exploration, you can optionally run the AutoAI pipeline notebook. This notebook contains the code to implement a specific pipeline from the experiment.
+
+* From your `Project` overview page, click on the `Assets` tab to open the assets page where your project assets are stored and organized.
+
+* Scroll down to the `Notebooks` section of the page and click on the pencil icon at the right of the Auto AI pipeline notebook (the exact name will be based on the name of the AutoAI experiment you ran followed by the pipeline number` ).
+
+* When the Jupyter notebook is loaded and the kernel is ready, you can go ahead and run all the cells in the notebook.
+
+* This notebook will build the pipeline and train it using the the data from the experiment.
+
+* Note that the exact implementation will vary based on which pipeline you saved as a notebook. Some pipelines will have different features (feature engineering, HPO) and train different evaluators.
 
 ## Conclusion
 
