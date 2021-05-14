@@ -109,7 +109,7 @@ For further exploration, you can optionally run the AutoAI pipeline notebook. Th
 
 * From your `Project` overview page, click on the `Assets` tab to open the assets page where your project assets are stored and organized.
 
-* Scroll down to the `Notebooks` section of the page and click on the pencil icon at the right of the Auto AI pipeline notebook (the exact name will be based on the name of the AutoAI experiment you ran followed by the pipeline number` ).
+* Scroll down to the `Notebooks` section of the page and click on the pencil icon at the right of the Auto AI pipeline notebook (the exact name will be based on the name of the AutoAI experiment you ran followed by the pipeline number).
 
 * When the Jupyter notebook is loaded and the kernel is ready, you can go ahead and run all the cells in the notebook.
 
