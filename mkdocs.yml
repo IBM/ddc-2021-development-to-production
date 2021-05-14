@@ -25,7 +25,7 @@ nav:
     - Trusted AI:
       - Bias with AIF360: README.md
       - Transparency with AIX360: README.md
-    - Model Versioning: README.md
+    - Model Versioning: ml-model-deployment-versioning/README.md
   - Workshop Resources:
     - FAQs / Tips: faq/README.md
     - Resources:
