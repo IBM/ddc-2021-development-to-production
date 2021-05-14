@@ -19,7 +19,7 @@ nav:
       - Run an AutoAI Experiment : ml-model-development-autoai/README.md
       - Run an AutoAI Notebook: ml-model-development-autoai/running-autoai-notebook.md
     - Deploying and Consuming ML Models: 
-      - Creating and Testing REST Endpoint: ml-model-deployment/README.md
+      - Creating and Testing an Online Endpoint: ml-model-deployment/README.md
       - Creating and Testing a Batch Endpoint: ml-model-deployment/batch-model-deployment.md
       - Sample Application: ml-model-deployment/sample-application-integration.md
     - Trusted AI:

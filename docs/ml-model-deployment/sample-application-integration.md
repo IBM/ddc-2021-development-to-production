@@ -70,24 +70,24 @@ You could run this Python application in your default python environment; howeve
 
 * Initialize a virtual environment with [`venv`](https://docs.python.org/3/tutorial/venv.html). Run the following commands in a terminal (or command prompt):
 
-  ```bash
-  # Create the virtual environment using Python.
-  # Note, it may be named python3 on your system.
-  python -m venv venv       # Python 3.X
+    ```bash
+    # Create the virtual environment using Python.
+    # Note, it may be named python3 on your system.
+    python -m venv venv       # Python 3.X
 
-  # Source the virtual environment. Use one of the two commands depending on your OS.
-  source venv/bin/activate  # Mac or Linux
-  ./venv/Scripts/activate   # Windows PowerShell
-  ```
+    # Source the virtual environment. Use one of the two commands depending on your OS.
+    source venv/bin/activate  # Mac or Linux
+    ./venv/Scripts/activate   # Windows PowerShell
+    ```
 
-  > **TIP** To terminate the virtual environment use the `deactivate` command.
+    > **TIP** To terminate the virtual environment use the `deactivate` command.
 
 * Next, to install the Python requirements, from a terminal (or command prompt) navigate to where you downloaded the python app zip file during the setup section. Unzip the downloaded python application and run the following commands:
 
-  ```bash
-  cd flaskapp
-  pip install -r requirements.txt
-  ```
+    ```bash
+    cd flaskapp
+    pip install -r requirements.txt
+    ```
 
 #### Start and Test the Application
 
@@ -95,16 +95,16 @@ Now we are ready to start our python application.
 
 * From a terminal (or command prompt), run the following commands (inside the python application directory):
 
-  ```bash
-  # You might need to use python3 instead of python
-  python creditriskapp.py
-  ```
+    ```bash
+    # You might need to use python3 instead of python
+    python creditriskapp.py
+    ```
 
 * Finally, use your web browser to go to [http://localhost:5000](http://localhost:5000) and try it out.
 
 * Either use the default values pre-filled in the input form, or modify the value and then click the `Submit` button. The python application will invoke the predictive model and a risk prediction & probability is returned:
 
-  [![Get the risk percentage as a result](../images/deployment/flaskapp-output.png)](../images/deployment/flaskapp-output.png)
+    [![Get the risk percentage as a result](../images/deployment/flaskapp-output.png)](../images/deployment/flaskapp-output.png)
 
 * Feel free to test other input values, from your terminal enter `ctrl`+`c` to stop the Flask server when you are done.
 
@@ -114,7 +114,7 @@ Now we are ready to start our python application.
 
 As an alternative, you can deploy this application in the your IBM Cloud account as a Cloud Foundry application.
 
-> **Important pre-requisite:** You will need a working installation of IBM Cloud CLI. ([See how to get started](https://cloud.ibm.com/docs/cli?topic=cli-getting-started))
+> **Important prerequisite:** You will need a working installation of IBM Cloud CLI. ([See how to get started](https://cloud.ibm.com/docs/cli?topic=cli-getting-started))
 
 * Configuring our application:
   * [Optional]: You can inspect or change the deployment definitions for this application in the file named `manifest.yml`. As defined, your application will have a random URL. You can could change that by setting `random-route: false` and picking a unique name in the `name` section.
