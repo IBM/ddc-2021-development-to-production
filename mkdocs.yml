@@ -22,10 +22,12 @@ nav:
       - Creating and Testing an Online Endpoint: ml-model-deployment/README.md
       - Creating and Testing a Batch Endpoint: ml-model-deployment/batch-model-deployment.md
       - Sample Application: ml-model-deployment/sample-application-integration.md
+    - Model Operations and Versioning: 
+      - Updating Model and Deployment Versions: ml-model-ops-and-versioning/README.md
+      - Promoting Assets Across Spaces: ml-model-ops-and-versioning/deployment-asset-operations.md
     - Trusted AI:
       - Bias with AIF360: README.md
       - Transparency with AIX360: README.md
-    - Model Versioning: ml-model-deployment-versioning/README.md
   - Workshop Resources:
     - FAQs / Tips: faq/README.md
     - Resources:
