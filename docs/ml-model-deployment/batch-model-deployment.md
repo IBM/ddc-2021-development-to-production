@@ -84,7 +84,7 @@ With the notebook open, spend a minute looking through the sections of the noteb
 
 * Section `3.0 Monitor Batch Job Status` will start polling the job status until it completes or fails. The code cell will output the status every 5 seconds as the job goes from queued to running to completed or failed.
 
-![Batch Job Status](../images/deployment/deploy_batch_results_poll.png)
+[![Batch Job Status](../images/deployment/deploy_batch_results_poll.png)](../images/deployment/deploy_batch_results_poll.png)
 
 * Once the job completes, continue to run the cells until the end of the notebook.
 
