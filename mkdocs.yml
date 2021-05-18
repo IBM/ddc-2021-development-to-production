@@ -26,8 +26,7 @@ nav:
       - Updating Model and Deployment Versions: ml-model-ops-and-versioning/README.md
       - Promoting Assets Across Spaces: ml-model-ops-and-versioning/deployment-asset-operations.md
     - Trusted AI:
-      - Bias with AIF360: README.md
-      - Transparency with AIX360: README.md
+      - Bias with AIF360: trusted-ai/aif360.md
   - Workshop Resources:
     - FAQs / Tips: faq/README.md
     - Resources:
