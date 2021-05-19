@@ -76,7 +76,7 @@ With the notebook open, spend a minute looking through the sections of the noteb
 
 * Section `4.0 Push Assets to target Staging Deployment Space` will import the assets (in this case machine learning models) we just exported to a new space. It uses the import APIs to push specific models to the space.
 
-   * In the second code cell of section `4.0` you will need to update the ID for the target deployment space (the space where the models are going to be deployed). You should have the ID from the section above, but if you dont just copy the ID from the output of the previous cell.
+    * In the second code cell of section `4.0` you will need to update the ID for the target deployment space (the space where the models are going to be deployed). You should have the ID from the section above, but if you dont just copy the ID from the output of the previous cell.
 
         [![Target Space](../images/versioning/assetmovenb-selecttargetDS.png)](../images/versioning/assetmovenb-selecttargetDS.png)
 
