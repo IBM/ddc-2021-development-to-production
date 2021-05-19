@@ -1,0 +1,114 @@
+# Project information
+site_name: Development to Production using Cloud Pak for Data
+site_url: https://ibm.github.io/ddc-2021-development-to-production
+site_author: IBM Developer
+
+# Repository
+repo_name: ddc-2021-development-to-production
+repo_url: https://github.com/ibm/ddc-2021-development-to-production
+edit_uri: edit/master/docs
+
+# Navigation
+nav:
+  - Welcome:
+    - About the workshop: README.md
+  - Workshop:
+    - Environment Setup: setup/README.md
+    - Data Wrangling with Data Refinery: data-processing-refinery/README.md
+    - Building ML Models with AutoAI: 
+      - Run an AutoAI Experiment : ml-model-development-autoai/running-autoai-experiment.md
+      - Run an AutoAI Notebook: ml-model-development-autoai/running-autoai-notebook.md
+    - Deploying and Consuming ML Models: 
+      - Creating and Testing an Online Endpoint: ml-model-deployment/online-model-deployment.md
+      - Creating and Testing a Batch Endpoint: ml-model-deployment/batch-model-deployment.md
+      - Sample Application: ml-model-deployment/sample-application-integration.md
+    - Model Operations and Versioning: 
+      - Updating Model and Deployment Versions: ml-model-ops-and-versioning/README.md
+      - Promoting Assets Across Spaces: ml-model-ops-and-versioning/deployment-asset-operations.md
+    - Trusted AI:
+      - Bias with AIF360: trusted-ai/README.md
+  - Workshop Resources:
+    - FAQs / Tips: faq/README.md
+    - Resources:
+      - IBM Developer: https://developer.ibm.com
+      - IBM Developer - Cloud Pak for Data: https://developer.ibm.com/components/cloud-pak-for-data
+      - IBM Cloud Pak for Data - Documentation: https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?audience=wdp
+      - IBM Cloud Pak for Data - Community: https://community.ibm.com/community/user/cloudpakfordata/home
+      - IBM Garage Architecture - Data: https://www.ibm.com/cloud/architecture/architectures/dataArchitecture
+
+## DO NOT CHANGE BELOW THIS LINE
+
+# Copyright
+copyright: Copyright &copy; 2021 IBM Developer
+
+# Theme
+theme:
+  name: material
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  icon:
+    logo: material/library
+  features:
+    - navigation.tabs
+    - navigation.top
+    #- navigation.instant
+  palette:
+    scheme: default
+    primary: blue
+    accent: blue
+
+# Plugins
+plugins:
+  - search
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ibm
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ibmdeveloper
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/ibm/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/user/developerworks
+    - icon: fontawesome/brands/dev
+      link: https://dev.to/ibmdeveloper
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
