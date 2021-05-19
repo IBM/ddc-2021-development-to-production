@@ -4,7 +4,7 @@ In this module, we'll explore how to run the AutoAI generated jupyter notebooks.
 
 > **Note:** You can click on any image in the instructions below to zoom in and see more details. When you do that just click on your browser's back button to return to the previous page.
 
-> **Note:** The lab instructions below assume you have completed the setup section already, if not, be sure to complete the setup first to create a project and a deployment space. It is also assumed you have completed the [AutoAI lab](README.md) where you completed an AutoAI experiment and saved a pipeline as a Jupyter notebook which you will be exploring in this module.
+> **Note:** The lab instructions below assume you have completed the setup section already, if not, be sure to complete the setup first to create a project and a deployment space. It is also assumed you have completed the [AutoAI lab](running-autoai-experiment.md) where you completed an AutoAI experiment and saved a pipeline as a Jupyter notebook which you will be exploring in this module.
 
 ## Open AutoAI Experiment Notebook
 

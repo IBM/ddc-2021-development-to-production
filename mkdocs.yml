@@ -16,23 +16,23 @@ nav:
     - Environment Setup: setup/README.md
     - Data Wrangling with Data Refinery: data-processing-refinery/README.md
     - Building ML Models with AutoAI: 
-      - Run an AutoAI Experiment : ml-model-development-autoai/README.md
+      - Run an AutoAI Experiment : ml-model-development-autoai/running-autoai-experiment.md
       - Run an AutoAI Notebook: ml-model-development-autoai/running-autoai-notebook.md
     - Deploying and Consuming ML Models: 
-      - Creating and Testing an Online Endpoint: ml-model-deployment/README.md
+      - Creating and Testing an Online Endpoint: ml-model-deployment/online-model-deployment.md
       - Creating and Testing a Batch Endpoint: ml-model-deployment/batch-model-deployment.md
       - Sample Application: ml-model-deployment/sample-application-integration.md
     - Model Operations and Versioning: 
       - Updating Model and Deployment Versions: ml-model-ops-and-versioning/README.md
       - Promoting Assets Across Spaces: ml-model-ops-and-versioning/deployment-asset-operations.md
     - Trusted AI:
-      - Bias with AIF360: trusted-ai/aif360.md
+      - Bias with AIF360: trusted-ai/README.md
   - Workshop Resources:
     - FAQs / Tips: faq/README.md
     - Resources:
       - IBM Developer: https://developer.ibm.com
       - IBM Developer - Cloud Pak for Data: https://developer.ibm.com/components/cloud-pak-for-data
-      - IBM Cloud Pak for Data - Platform API: https://cloud.ibm.com/apidocs/cloud-pak-data
+      - IBM Cloud Pak for Data - Documentation: https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?audience=wdp
       - IBM Cloud Pak for Data - Community: https://community.ibm.com/community/user/cloudpakfordata/home
       - IBM Garage Architecture - Data: https://www.ibm.com/cloud/architecture/architectures/dataArchitecture
 
@@ -51,6 +51,7 @@ theme:
     logo: material/library
   features:
     - navigation.tabs
+    - navigation.top
     #- navigation.instant
   palette:
     scheme: default

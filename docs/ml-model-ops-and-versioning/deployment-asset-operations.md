@@ -4,7 +4,7 @@ In this module, we will explore how we can move assets (i.e machine learning mod
 
 > **Note:** You can click on any image in the instructions below to zoom in and see more details. When you do that just click on your browser's back button to return to the previous page.
 
-> **Note:** The lab instructions below assume you have completed the [Model Deployment labs](../ml-model-deployment/README.md). You should have already created a model and promoted it to a deployment space which is what we will use in this lab. If you run into an any issues, check the [FAQ section](../faq/README.md) for common resolutions*.
+> **Note:** The lab instructions below assume you have completed the [Model Deployment labs](../ml-model-deployment/online-model-deployment.md). You should have already created a model and promoted it to a deployment space which is what we will use in this lab. If you run into an any issues, check the [FAQ section](../faq/README.md) for common resolutions*.
 
 ## Create A New Deployment Space
 

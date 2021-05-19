@@ -4,7 +4,7 @@ In this module, we will access an online model deployment through a REST API. Th
 
 > **Note:** You can click on any image in the instructions below to zoom in and see more details. When you do that just click on your browser's back button to return to the previous page.
 
-> **Note:** The lab instructions below assume you have completed the setup section already, if not, be sure to complete the setup first to create a project and a deployment space. It's also assumed you have created an online deployment, if not, be sure to complete the [online deployment](README.md). If you would have any issues, check the [FAQ section](../faq/README.md)*.
+> **Note:** The lab instructions below assume you have completed the setup section already, if not, be sure to complete the setup first to create a project and a deployment space. It's also assumed you have created an online deployment, if not, be sure to complete the [online deployment](online-model-deployment.md). If you would have any issues, check the [FAQ section](../faq/README.md)*.
 
 ## Running the Python Flask Application
 
@@ -108,7 +108,7 @@ Now we are ready to start our python application.
 
 * Feel free to test other input values, from your terminal enter `ctrl`+`c` to stop the Flask server when you are done.
 
-* ***Important: Please go ahead and cleanup your deployments. Follow the [Cleanup Deployment instructions below.](README.md#cleanup-deployment)***
+* ***Important: Please go ahead and cleanup your deployments. Follow the [Cleanup Deployment instructions below.](online-model-deployment.md#cleanup-deployment)***
 
 ### Option 2: Running on IBM Cloud
 
@@ -133,7 +133,7 @@ As an alternative, you can deploy this application in the your IBM Cloud account
   
 * And we are all done. We configured our application, logged in using the IBM Cloud cli, and published our application to the cloud.
 
-* ***Important: Please go ahead and cleanup your deployments. Follow the [Cleanup Deployment instructions below.](README.md#cleanup-deployment)***
+* ***Important: Please go ahead and cleanup your deployments. Follow the [Cleanup Deployment instructions below.](online-model-deployment.md#cleanup-deployment)***
 
 ## Conclusion
 

@@ -104,7 +104,7 @@ In order to conserve resources, make sure that you stop the environment used by 
 
     [![Stop environment confirm](../images/project/stop-notebook-environment-confirmation.png)](../images/project/stop-notebook-environment-confirmation.png)
 
-* ***Important: If you have completed this section and do not plan on completing the other optional deployment approaches, please go ahead and cleanup your deployment. Follow the [Cleanup Deployment instructions.](README.md#cleanup-deployments)***
+* ***Important: If you have completed this section and do not plan on completing the other optional deployment approaches, please go ahead and cleanup your deployment. Follow the [Cleanup Deployment instructions.](online-model-deployment.md#cleanup-deployments)***
 
 ## Conclusion
 
