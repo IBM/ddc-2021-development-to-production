@@ -5,11 +5,6 @@ In this module, you will explore aspects of trust and transparency in AI. As mac
 For the credit risk example used in the workshop, bias in the models can mean that certain populations of customers may be harmed or treated unfairly (i.e not receive loans). And the organizations using those models may be subject to legal and/or financial penalties. In the lab, we will be using the AI Fairness 360 (AIF360) Toolkit. AIF360 is an
 extensible open source toolkit with over 70 fairness metrics and 10 state-of-the-art bias mitigation algorithm, which can be used to help examine and mitigate bias throughout the AI model/application lifecycle.
 
-**Resources/References:**
-
-* [IBM Research - Fairness](https://www.research.ibm.com/artificial-intelligence/publications/paper/?id=AI-Fairness-360:-An-Extensible-Toolkit-for-Detecting,-Understanding,-and-Mitigating-Unwanted-Algorithmic-Bias)
-* [IBM Developer Center for Open Source Data and AI Technologies - Trusted AI](https://www.ibm.com/opensource/centers/codait/trusted-ai/)
-
 > **Note:** You can click on any image in the instructions below to zoom in and see more details. When you do that just click on your browser's back button to return to the previous page.
 
 > **Note:** The lab instructions below assume you have completed the setup section already, if not, be sure to complete the setup first to create a project and a deployment space.
@@ -73,3 +68,11 @@ In order to conserve resources, make sure that you stop the environment used by 
 ## Conclusion
 
 Congratulations. You've completed this lab and now have a basic understanding of how to install the AIF360 toolkit and some practical experience using a small subset of the toolkit to calculate bias and mitigate it.
+
+**Additional Resources / References:**
+
+There are lots of resources to continue exploring Trust in AI. To start, consider exploring some of the links below:
+
+* [IBM Research - Fairness](https://www.research.ibm.com/artificial-intelligence/publications/paper/?id=AI-Fairness-360:-An-Extensible-Toolkit-for-Detecting,-Understanding,-and-Mitigating-Unwanted-Algorithmic-Bias)
+* [IBM Developer Center for Open Source Data and AI Technologies - Trusted AI](https://www.ibm.com/opensource/centers/codait/trusted-ai/)
+* [Sample Notebook using AIF360 and AutoAI](https://github.com/IBM/watson-machine-learning-samples/blob/master/cloud/notebooks/python_sdk/experiments/autoai/Use%20Lale%20AIF360%20scorers%20to%20calculate%20and%20mitigate%20bias%20for%20credit%20risk%20AutoAI%20model.ipynb)
