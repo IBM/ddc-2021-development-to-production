@@ -15,15 +15,15 @@ nav:
   - Workshop:
     - Environment Setup: setup/README.md
     - Data Wrangling with Data Refinery: data-processing-refinery/README.md
-    - Building ML Models with AutoAI: 
+    - Building Machine Learning Models with AutoAI: 
       - Run an AutoAI Experiment : ml-model-development-autoai/running-autoai-experiment.md
       - Run an AutoAI Notebook: ml-model-development-autoai/running-autoai-notebook.md
-    - Deploying and Consuming ML Models: 
+    - Deploying and Consuming Machine Learning Models: 
       - Creating and Testing an Online Endpoint: ml-model-deployment/online-model-deployment.md
       - Creating and Testing a Batch Endpoint: ml-model-deployment/batch-model-deployment.md
-      - Sample Application: ml-model-deployment/sample-application-integration.md
-    - Model Operations and Versioning: 
-      - Updating Model and Deployment Versions: ml-model-ops-and-versioning/README.md
+      - Integration with Sample Application: ml-model-deployment/sample-application-integration.md
+    - Model Operations and Asset Versioning: 
+      - Updating Model and Deployment Versions: ml-model-ops-and-versioning/deployment-model-updates.md
       - Promoting Assets Across Spaces: ml-model-ops-and-versioning/deployment-asset-operations.md
     - Trusted AI:
       - Bias with AIF360: trusted-ai/README.md
