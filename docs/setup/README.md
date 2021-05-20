@@ -1,6 +1,6 @@
 # Workshop Setup
 
-Before we get started with the workshop, you will need to download some assets and setup your environment. 
+Before we get started with the workshop, you will need to download some assets and setup your environment.
 
 This section is broken up into the following steps:
 
