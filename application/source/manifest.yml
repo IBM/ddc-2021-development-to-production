@@ -1,0 +1,6 @@
+---
+applications:
+- memory: 128MB
+  disk_quota: 256MB
+  name: ddc-workshop-app
+  random-route: true
