@@ -14,7 +14,7 @@ There are many ways of running python applications. We will cover two of them, f
 
 Regardless of which option we choose for deployment, we need to configure our Python application so it knows how to connect to our specific model. To do that follow these steps.
 
-* Unzip the python app zip file that you downloaded in the setup section. Depending on your operation system the command to do this will differ, so an online search might be in order if you don't know how already!
+* Unzip the python app zip file that you downloaded in the setup section. Depending on your operating system the command to do this will differ, so an online search might be in order if you don't know how already!
 
 * It's best practice to store secrets and configurations as environment variables, instead of hard-coding them in the code. Following this convention, we will store our API Key and model URL in a `.env` file. The key-value pairs in this files are treated as environment variables when the code runs. To create your environment file:
 
@@ -136,9 +136,11 @@ Choose this option if you want to run the Python Flask application remotely in t
     vi .env
     ```
 
+    > *Note: The next set of steps use VI to edit the file. Although the exact VI commands are listed in the steps, feel free to explore these references: [CSU Help docs](https://www.cs.colostate.edu/helpdocs/vi.html) or [VI Intro](https://developer.ibm.com/technologies/linux/tutorials/l-vi/)*
+
 * Press the `i` key in the terminal to switch into insert mode (so you can edit the file).
 
-* Copy the entire contents of your local `.env` file you created in the [`Common Steps`](#common-steps) section and paste it into the terminal window.
+* Copy the entire contents of the local `.env` file you created in the [`Common Steps`](#common-steps) section above and paste it into the terminal window.
 
 * Write and exit the file in the terminal window by first pressing the `escape` key and then entering the following command:
 
@@ -148,7 +150,7 @@ Choose this option if you want to run the Python Flask application remotely in t
 
 #### Deploy Application
 
-* [Optional] Configuring the application: You can inspect or change the deployment definitions for this application in the file named `manifest.yml`. As defined, your application will have a random URL. You can could change that by setting `random-route: false` and picking a unique name in the `name` section.
+* [Optional] Configuring the application: You can inspect or change the deployment definitions for this application in the file named `manifest.yml`. As defined, your application will have a random URL. You can could change that by setting `random-route: false` and picking a unique name (for example append your initials to the existing name "ddc-workshop-app-XYZ) in the `name` section.
 
 * Ensure you are logged in on the IBM Cloud CLI. If you are running from the Cloud Shell, the CLI is automatically logged in for you, so you could skip to the next step. Otherwise, in the terminal, enter the command `ibmcloud login` to login and authenticate. (You can also use `ibmcloud login --sso` if your organization uses single-sign-on).
 
