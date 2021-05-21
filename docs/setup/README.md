@@ -31,7 +31,7 @@ We need to provision our Cloud Pak for Data as a Service instance. Cloud Pak for
 
     * If you do not have an IBMid, enter your email address on the left panel and accept the terms checkbox in the `Create a new IBM Cloud Account` section. Then click the `Next` button to complete the process of creating a new account.
 
-    * If you already have and IBMid, click on the `Log in with your IBMid` link.
+    * If you already have and IBMid, click on the `Log in with your IBMid` link. Enter the requested profile information and then click the `Continue` button.
 
     > **Note:** If you are a returning user and you have watson services in a different region than the pre-selected one, you will see an error message telling you to select that region instead. See the [FAQ](../faq/README.md) section for help.
 
@@ -131,17 +131,13 @@ You will need to associate a Watson Machine Learning service instance to your pr
 
 Cloud Pak for Data uses the concept of `Deployment Spaces` to configure and manage the deployment of a set of related deployable assets. These assets can be data files, machine learning models, etc. For this workshop, we need to create one.
 
-* Go the (☰) navigation menu, expand `Deployment spaces` and then select `View all spaces`.
+* Go the (☰) navigation menu, expand `Deployments` and then select `View all spaces`.
 
     [![(☰) Menu -> Deployment spaces](../images/navigation/menu-analytics-deployments.png)](../images/navigation/menu-analytics-deployments.png)
 
 * Click on the `New deployment space` button.
 
     [![Add New deployment space](../images/setup/new-deployment-space.png)](../images/setup/new-deployment-space.png)
-
-* We will create an empty deployment space, so click on the `Create an empty space` option.
-
-    [![Create empty deployment space](../images/setup/new-deployment-space-empty.png)](../images/setup/new-deployment-space-empty.png)
 
 * Give your deployment space a unique name and optional description. In the service drop downs, select the Cloud Object Storage instance that you had created when you were creating the project and select the Machine Learning Service instance associated with your IBM Cloud Pak for Data as a Service instance. Then click the `Create` button.
 
@@ -193,6 +189,8 @@ If you are not sure of the region you provisioned, you can use the IBM Cloud CLI
     ```bash
     ibmcloud resource service-instance <WML_INSTANCE_NAME>
     ```
+
+    > *Note: The `<WML_INSTANCE_NAME>` is the name of your machine learning instance name, which we saw in the ['Verify Service Instances'](#verify-service-instances) section above.*
 
 * Get the value of `Location` from this result. This is the value that you will need to save for future labs.
 
