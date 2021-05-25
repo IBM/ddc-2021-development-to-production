@@ -29,7 +29,7 @@ This section is broken up into the following steps:
 
 * To configure the experiment, we must first give it the dataset that will be used to train the machine learning model. Click on the `Select from project` button to point to a dataset in your project.
 
-* Now we can select the training CSV file. If you completed the previous ***Data Processing with Data Refinery*** lab module where you generated a single shaped CSV file from a refinery job, select that CSV file (the name will be whatever you selected in that module, for example: `credit_risk_shaped`). If you did not complete that module, go ahead and select the `german_credit_data_noid.csv` file that was preloaded in the project. Then click the `Select asset` button.
+* Now we can select the training CSV file. If you completed the previous ***Data Processing with Data Refinery*** lab module where you generated a single shaped CSV file from a refinery job, select that CSV file (the name will be whatever you selected in that module, for example: `credit_risk_shaped`). If you did not complete that module, go ahead and select the `german_credit_data.csv` file that was preloaded in the project. Then click the `Select asset` button.
 
     [![Select data](../images/autoai/autoai-select-dataset.png)](../images/autoai/autoai-select-dataset.png)
 
