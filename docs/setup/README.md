@@ -47,7 +47,7 @@ We need to provision our Cloud Pak for Data as a Service instance. Cloud Pak for
 
     [![(☰) Menu -> service instances](../images/navigation/menu-service-instances.png)](../images/navigation/menu-service-instances.png)
 
-* If you see an instance of *Machine Learning*, take note of its name and you can skip to section [3. Create a Project and Deployment Space](#3-create-a-project-and-deployment-space).
+* If you see an instance of *Machine Learning*, take note of its name and you can skip to section [Create a Project and Deployment Space](#create-a-project-and-deployment-space).
 
 * If you do not have an instance of *Machine Learning*, click on the `Add service +` button.
 
