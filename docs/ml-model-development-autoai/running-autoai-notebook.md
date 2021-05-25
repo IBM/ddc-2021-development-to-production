@@ -22,7 +22,7 @@ Let's start by exploring the AutoAI experiment notebook. This notebook contains 
 
 * When the Jupyter notebook is loaded and the kernel is ready, we will be ready to start executing it in the next section.
 
-## Run Jupyter notebook
+### Run Jupyter notebook
 
 Spend some time looking through the sections of the notebook to get an overview. A notebook is composed of text (markdown or heading) cells and code cells. The markdown cells provide comments on what the code is designed to do.
 
@@ -38,7 +38,7 @@ The notebook generated is pre filled with Python code and is divided into the fo
 * [4.0 Working with Completed AutoAI Experiment](#40-working-with-completed-autoai-experiment)
 * [5.0 Deploy and score](#50-deploy-and-score)
 
-### 1.0 Setup
+#### 1.0 Setup
 
 * This section installs the necessary packages and libraries to run the AutoAI experiment and scikit learn pipelines. Run the cell in this section as is.
 
@@ -50,7 +50,7 @@ The notebook generated is pre filled with Python code and is divided into the fo
 
     [![restart kernel](../images/autoai/autoai-expnotebook-restartkernel.png)](../images/autoai/autoai-expnotebook-restartkernel.png)
 
-### 2.0 Experiment Configuration
+#### 2.0 Experiment Configuration
 
 * The first part of this section contains credentials to *Cloud Object Storage* through which the training data that was used to create the pipelines and the pipeline results are retrieved. Run this cell as is.
 
@@ -60,7 +60,7 @@ The notebook generated is pre filled with Python code and is divided into the fo
 
     [![input parameters](../images/autoai/input_parameters.png)](../images/autoai/input_parameters.png)
 
-### 3.0 Watson Machine Learning Connection
+#### 3.0 Watson Machine Learning Connection
 
 * This section will setup the credentials to the Machine Learning instance you provisoned. In the code cell, replace the variable value `'PUT_YOUR_KEY_HERE'` with your the API key you created during the setup section. (*Note: Remember to keep the single quotes*).
 
@@ -68,7 +68,7 @@ The notebook generated is pre filled with Python code and is divided into the fo
 
     [![input parameters](../images/autoai/autoai-expnotebook-wmlkey.png)](../images/autoai/autoai-expnotebook-wmlkey.png)
 
-### 4.0 Working with Completed AutoAI Experiment
+#### 4.0 Working with Completed AutoAI Experiment
 
 * Within this section of the notebook, the first set of code cells extract the current experiment (i.e. `pipeline_optimizer`) and then gets the pipelines from the experiment to display their performance in a table. Run the cells until you see the table output from the `Pipeline Comparison` cell.
 
@@ -78,7 +78,7 @@ The notebook generated is pre filled with Python code and is divided into the fo
 
     ```python
     pipeline_to_explore = 'INSERT_PIPELINE_NAME_HERE'
-    pipeline_model = pipeline_optimizer.get_pipeline(pipeline=pipeline_to_explore)
+    pipeline_model = pipeline_optimizer.get_pipeline(pipeline_name=pipeline_to_explore)
     ```
 
 * In the code you just inserted, replace the value `INSERT_PIPELINE_NAME_HERE` with one of the pipeline names you see in the first column of the summary table (*Note: Pick a pipeline name you haven't deployed in a previous lab. In the screenshot below, we are getting the pipeline `Pipeline_7`*). Once you have updated this cell, go ahead and run it.
@@ -89,7 +89,7 @@ The notebook generated is pre filled with Python code and is divided into the fo
 
     [![visualize](../images/autoai/autoai-expnotebook-visualizepipeline.png)](../images/autoai/autoai-expnotebook-visualizepipeline.png)
 
-### 5.0 Deploy and Score
+#### 5.0 Deploy and Score
 
 * This section of the notebook contains code that deploys the pipeline model as a web service using Watson Machine Learning. This section requires users to enter a `target_space_id` of the deployment space where the model will be deployed.
 
@@ -122,6 +122,22 @@ For further exploration, you can optionally run the AutoAI pipeline notebook. Th
 * This notebook will build the pipeline and train it using the the data from the experiment.
 
 * Note that the exact implementation will vary based on which pipeline you saved as a notebook. Some pipelines will have different features (feature engineering, HPO) and train different evaluators.
+
+## Stop the Environment
+
+In order to conserve resources, make sure that you stop the environment used by your notebook(s) when you are done.
+
+* Navigate back to your project information page by clicking on your project name from the navigation drill down on the top left of the page.
+
+    [![Back to project](../images/project/navigate-to-project.png)](../images/project/navigate-to-project.png)
+
+* Click on the 'Environments' tab near the top of the page. Then in the 'Active environment runtimes' section, you will see the environment used by your notebook (i.e the `Tool` value is `Notebook`). Click on the three vertical dots at the right of that row and select the `Stop` option from the menu.
+
+    [![Stop environment](../images/project/stop-notebook-environment.png)](../images/project/stop-notebook-environment.png)
+
+* Click the `Stop` button on the subsequent pop up window.
+
+    [![Stop environment confirm](../images/project/stop-notebook-environment-confirmation.png)](../images/project/stop-notebook-environment-confirmation.png)
 
 ## Conclusion
 

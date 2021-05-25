@@ -27,13 +27,12 @@ Regardless of which option we choose for deployment, we need to configure our Py
 
    * Edit `.env` to and fill in the `MODEL_URL` and `API_TOKEN` variables.
 
-      * `API_TOKEN` is your API Token that we created during the setup module. .
+      * `API_TOKEN` is your API Token that we created during the setup module.
       * `MODEL_URL` is your online deployment's endpoint. If you need to get the endpoint again:
 
-        * Go to the (☰) hamburger menu > `Deployments` > `View all spaces`.
-        * Select your Deployment Space name from the [pre-work](https://ibm-developer.gitbook.io/cloudpakfordata-credit-risk-workshop/v/workshop-DDC/getting-started/pre-work) section
-        * Select your model from the ML with [Jupyter Notebook](https://ibm-developer.gitbook.io/cloudpakfordata-credit-risk-workshop/v/workshop-DDC/credit-risk-workshop/machine-learning-in-jupyter-notebook) section.
-        * In the `Online` tab, select your deployment's name.
+        * Go to the (☰) hamburger menu > `Deployments` > `View all spaces` and then click the `Spaces` tab.
+        * Select the Deployment Space you created during the [setup module](../setup/README.md)
+        * Go to the `Deployments` tab and select the online deployment you created during the [online deployment lab](online-model-deployment.md).
         * Finally, you can find the Endpoint in the API reference section.
 
    * Here is an **example** of a completed lines of the .env file. Your `API_TOKEN` and `MODEL_URL` will defer.
@@ -44,7 +43,7 @@ Regardless of which option we choose for deployment, we need to configure our Py
 
      # 1. Required: Provide your web service URL for scoring.
      # E.g., MODEL_URL=https://<cluster_url>/v4/deployments/<deployment_space_guid>/predictions
-     MODEL_URL=https://us-south.ml.cloud.ibm.com/ml/v4/deployments/012f3ebd-9885-4d1f-a720-9d2f2008ff2a/predictions?version=2020-10-31
+     MODEL_URL=https://us-south.ml.cloud.ibm.com/ml/v4/deployments/012f3ebd-9885-4d1f-a720-xyzzzzff2a/predictions?version=2020-10-31
      
      # 2. Required: fill in EITHER section A OR B below:
 
@@ -54,7 +53,7 @@ Regardless of which option we choose for deployment, we need to configure our Py
      #     TOKEN_REQUEST_URL=https://iam.ng.bluemix.net/identity/token
      #     API_TOKEN=<Your API Key>
      TOKEN_REQUEST_URL=https://iam.ng.bluemix.net/identity/token
-     API_TOKEN=0evvIIfebBQZc2AIxWE2rYkYc2KGAoiHpMiphntzhxqO
+     API_TOKEN=0evvIIfebBsssbbbbbxxxxssddddsdpMiphntzhxqO
      ```
 
 * And we're done! Now you can proceed to your favorite option below.
