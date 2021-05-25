@@ -4,7 +4,7 @@ In this module, we will explore how we can update a model or deployment once it 
 
 > **Note:** You can click on any image in the instructions below to zoom in and see more details. When you do that just click on your browser's back button to return to the previous page.
 
-> **Note:** The lab instructions below assume you have completed the [Machine Learning with AutoAI labs](../ml-model-development-autoai/running-autoai-experiment.md) and the [Model Deployment labs](../ml-model-deployment/online-model-deployment.md). You should have already created a model, promoted it to a deployment space and created an online deployment which is what we will update in this lab. If you run into an any issues, check the [FAQ section](../faq/README.md) for common resolutions*.
+> **Note:** The lab instructions below assume you have completed the [Machine Learning with AutoAI labs](../ml-model-development-autoai/running-autoai-experiment.md) and the [Model Deployment labs](../ml-model-deployment/online-model-deployment.md). You should have already created a model, promoted it to a deployment space and created an online deployment which is what we will update in this lab. If you run into an any issues, check the [FAQ section](../faq/README.md) for common resolutions.
 
 ## Updating a Deployment
 
@@ -12,7 +12,7 @@ Once a deployment is created for a model, there may be consumers/clients of that
 
 Its important to note that in order to update a deployment, the framework of the new model must be compatible with the existing deployed model. Also, the input schema for the new model must match the deployed model.
 
-***Note: If you have completed both of the AutoAI Labs (1) model development with the UI and (2)running the generated Jupyter notebook), then you will have two models promoted in your deployment space and can proceed to the next section. If you have not completed the second lab, you can follow the [instructions at the bottom of this page](#extra-instructions:-save-and-promote-a-second-model) to save/promote a second pipeline.***
+***Note: If you have completed both of the AutoAI Labs (1) model development with the UI and (2)running the generated Jupyter notebook), then you will have two models promoted in your deployment space and can proceed to the next section. If you have not completed the second lab, you can follow the [instructions at the bottom of this page](#extra-instructions-to-save-and-promote-a-second-model) to save/promote a second pipeline.***
 
 ### Modify the Online Deployment
 
@@ -54,9 +54,9 @@ Its important to note that in order to update a deployment, the framework of the
 
 * Optionally, feel free to test the model by submitting a sample payload in the test panel as you did in the [model deployment lab](../ml-model-deployment/online-model-deployment.md#test-online-model-deployment). You may notice that the model makes a different prediction or have different scores from the previous model.
 
-## Extra Instructions: Save and Promote a Second Model
+## Extra Instructions to Save and Promote a Second Model
 
-These instructions are provided to help you deploy a second model from an existing AutoAI experiment. You only need to run them if you need a reminder on how to save and promote another pipeline from AutoAI, which you need to complete the lab above.
+**These additional instructions are provided to help you deploy a second model from an existing AutoAI experiment. You only need to run them if you do not currently have two models in your deployment space and you need a reminder on how to save and promote another pipeline from AutoAI, which you need to complete the lab above.**
 
 * To get started, we will need to identify the new model we want to use. Go the (☰) navigation menu, expand `Projects` and then click on your analytics project.
 
