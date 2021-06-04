@@ -25,7 +25,11 @@ We need to provision our Cloud Pak for Data as a Service instance. Cloud Pak for
 
 ### Create Cloud Pak for Data Services
 
-* Launch a new web browser window or tab and navigate to [IBM Cloud Pak for Data](https://dataplatform.cloud.ibm.com/registration/stepone?context=cpdaas&apps=all&preselect_region=true)
+* Launch a new web browser window or tab and navigate to IBM Cloud Pak for Data using the region closest to your location from the list below:
+
+    * [US, Dallas](https://dataplatform.cloud.ibm.com/registration/stepone?context=cpdaas&apps=all&regions=us-south&preselect_region=true)
+    * [EU, Frankfurt](https://eu-de.dataplatform.cloud.ibm.com/registration/stepone?context=cpdaas&apps=all&regions=eu-de&preselect_region=true)
+    * [Japan, Tokyo](https://jp-tok.dataplatform.cloud.ibm.com/registration/stepone?context=cpdaas&apps=all&regions=jp-tok&preselect_region=true)
 
 * You can leave the pre-selected region or select the region nearest to you. Next, log in by doing one of the following:
 
